@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-
-{% block title %}Player Detail{% endblock %}
-
-{% block content %}
-<h1>{{ player.name }}</h1>
-<p>Age: {{ player.age }}</p>
-<img src="{{ url_for('static', filename='images/' ~ player.image) }}" alt="{{ player.name }}">
-{% endblock %}
